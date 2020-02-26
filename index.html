@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Metadata -->
+  	<meta charset="utf-8"/>
+  	<!-- Styles -->
+	<link rel="stylesheet" href="assets/css/codemirror.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/fullscreen.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/ambiance.css">
+	<!-- Title and favicon -->
+  	<title>Javascript Playground</title>
+</head>
+<body>
+	<!-- Controls section -->
+	<div id="controls">
+		<button onclick="run();">Run</button>
+    	<button onclick="editor.setValue('');">Clear</button>
+
+    	<button onclick="example11();" class="f-r">11. Objects</button>
+    	<button onclick="example10();" class="f-r">10. List iterator</button>
+    	<button onclick="example9();" class="f-r">9. List</button>
+    	<button onclick="example8();" class="f-r">8. Multiple conditional</button>
+    	<button onclick="example7();" class="f-r">7. Loops</button>
+    	<button onclick="example6();" class="f-r">6. Prompt</button>
+    	<button onclick="example5();" class="f-r">5. Functions</button>
+    	<button onclick="example4();" class="f-r">4. Maths</button>
+    	<button onclick="example3();" class="f-r">3. Conditional</button>
+    	<button onclick="example2();" class="f-r">2. Variables</button>
+    	<button onclick="example1();" class="f-r">1. Hello World</button>
+	</div>
+
+	<!-- Application section -->
+  	<div id="app">
+  		<!-- Code editor -->
+  		<div class="panel">
+  			<form><textarea id="code" name="code" rows="5"></textarea></form>
+  		</div>
+
+  		<!-- Console output -->
+  		<div class="panel" id="console">
+  			<ul id="output">
+  				<li></li>
+  			</ul>
+  		</div>
+  	</div>
+
+  	<!-- Scripts -->
+  	<script src="assets/js/codemirror.js"></script>
+  	<script src="assets/js/javascript-syntax.js"></script>
+  	<script type="text/javascript" src="assets/js/fullscreen.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+  	<script type="text/javascript" src="assets/js/console-log-html.min.js"></script>
+  	<script type="text/javascript" src="assets/js/evaluation.js"></script>
+  	<script type="text/javascript" src="assets/js/output.js"></script>
+</body>
+</html>
